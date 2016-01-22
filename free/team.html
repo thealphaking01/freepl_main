@@ -57,6 +57,14 @@ for(var i = 0; i < favorite.length; i++) {
          	a=parseInt(a);
          	ctr++;
          	b=b-a;
+         	if(b<0)
+         	{
+         		cbs[i].checked=false;
+         		b=b+a;
+         		alert("Budget Insufficient");
+
+
+         	}
          }
          	
         }
@@ -97,7 +105,7 @@ for(var i = 0; i < favorite.length; i++) {
 			<td>Rohit Sharma</td> 
 			<td>India</td> 
 			<td>Batsman</td>
-			<input type="hidden"  name='xxx'  value="90" />
+			<input type="hidden"  name='xxx'  value="450" />
 			<td>90</td>
 		</tr>
 		<tr>
